@@ -1,0 +1,241 @@
+html {
+    font-size: 62.5%;
+    overflow:hidden;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+    background:#333;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    padding: 5px 13px;
+    color:black;
+    text-shadow: 1px 1.3px 2px #000000;
+  }
+  
+    
+  p.log {
+    font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    padding: 0px 13px 1px 13px;
+    
+    color: black;
+    
+  }
+  p.log:hover{
+    text-shadow: 0px 0px 8px black;
+  }
+
+      
+  p.log1 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    padding: 0px 13px 1px 13px;
+    
+    color: whitesmoke;
+    margin-top: 4%;
+    
+  }
+  p.log1:hover{
+    text-shadow: 0px 0px 8px antiquewhite;
+  }
+  legend{
+    background:#52E6EF;
+  }
+  
+
+  fieldset:hover{
+    box-shadow:0px 0px 16px 0px #52E6EF;
+  }
+  
+  h2 {
+    font-size: 8rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+  }
+  
+  h3 {
+    font-size: 3.5rem;
+  }
+  
+  h4 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 10px;
+    
+  }
+  
+  a {
+    font-family: "Montserrat", sans-serif;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 0px;
+    margin-left: -103px;
+  }
+  
+  input{
+    margin-top: 4%;
+    padding: 1% 1%;
+  }
+
+  button {
+    background: #52E6EF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 7px;
+    padding: 1.5% 3%;
+    margin-top: 4%;
+}
+
+  .nav-container {
+    background:#52E6EF;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  nav {
+    width: 91%;
+    margin: auto;
+    min-height: 5vh;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    list-style: none;
+    z-index:1;
+  }
+  a{
+    
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding-left: 0px;
+    margin-left: -103px;
+  }
+  nav #logo {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    position: relative;
+  }
+  
+  nav #logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    background-image:url('./img/ehome.png');
+    border-radius: 50%;
+    -webkit-transform: translate(-10%, -20%);
+            transform: translate(-10%, -20%);
+    mix-blend-mode: screen;
+  }
+  
+  nav .order {
+    background: #000000;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+  }
+
+  .soon2 {
+    min-height: 82vh;
+    position: relative;
+    z-index: 0;
+  }
+
+  footer {
+    min-height: 10vh;
+    background: #52E6EF;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    list-style: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  footer h1 {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  
+  @media screen and (max-width: 720px) {
+    html {
+      font-size: 50%;
+    }
+    nav #logo {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+    nav ul li {
+      margin-left: 5rem;
+    }
+     footer h1 {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    } 
+  }
